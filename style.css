@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    max-height: 390px;
+    font-family: Tahoma;
+
+}
+body{
+    background: #1e1e1e;
+    overflow-x: hidden;
+    
+    
+}
+nav .logo img{
+    display: none;
+}
+.content h3{
+    width: 100%;
+}
+@keyframes textanimation{
+    from{color: white;}
+    to{color: #858585};
+}
+.letter{
+    font-family: Bahnschrift;
+    font-size: 39px;color: white;
+    font-weight: 1px;
+    animation-name: textanimation;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+#l1{
+    animation-delay: 0s;
+}
+#l2{
+    animation-delay: 0.5s;
+}
+#l3{
+    animation-delay: 1s;
+}
+#l4{
+    animation-delay: 1.5s;
+}
+#l5{
+    animation-delay: 2s;
+}
+#l6{
+    animation-delay: 2.5s;
+}
+#l7{
+    animation-delay: 3s;
+}
+#l8{
+    animation-delay: 3.5s;
+}
+#l9{
+    animation-delay: 4s;
+}
+#l10{
+    animation-delay: 4.5s;
+}
+
+#loadingmain{
+    width: 86px;
+    height: 60px;
+    margin: 0 auto 0 auto;
+}
+.page{
+    width: 100%;
+    height: 100vh;
+    background: #1e1e1e; 
+}
+header{
+        height: 70px;
+        background: #1e1e1e;
+    
+}
+header .menu-icon{
+        display: none;
+}
+nav{
+    width: 89%;
+    margin: 0 auto;
+    background: #181818;
+   
+}
+nav .logo img{
+    width: 30px;
+    height: 30px;
+    margin: 22px 5px;
+    float: left;
+}
+nav ul{
+    list-style: none;
+    float: left;
+}
+nav li{
+    display: inline-block;
+    padding: 28px 10px;
+    font-family: tahoma;
+    color: #a8acac;
+    transition: all 0.5s;
+}
+nav li:hover{
+    cursor: pointer;
+    color: #fff;
+}
+.content{
+     
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+}
+.content h1{
+        font-size: 250%;
+        color: white;
+        font-family: lato;
+}
+.content h3{
+        font-size: 100%;
+        color: #1db1bf;
+        font-family: lato;
+    font-weight: 1;
+}
+
+/* in this part i want to Responsive the web */
+
+@media screen and (max-width:600px){
+
+    .content h3{
+        font-weight: 600;
+        width: 130%;
+        text-align: center;
+        margin-left: -25px;
+    }
+    .logo{
+        display: none;
+    }
+    header .menu-icon{
+         z-index: 10000;
+        display: block;
+        width: 20px;
+        height: 20px;
+        position: fixed;
+        top: 25px;
+        right: 20px;
+        
+}
+    .bar,
+    .bar::before,
+    .bar::after {
+        z-index: 10000;
+        content: "";
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        background: #fff;
+        transition: all 0.5s;
+        
+    }
+    .bar::before{
+        top: -6px;
+        
+    }
+        .bar::after{
+        top: 6px;
+    }
+    
+    .Active .bar{
+        background: transparent;
+    }
+    .Active .bar::before{
+        top: 0;
+        transform: rotate(45deg);
+    }
+        .Active .bar::after{
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    
+    nav{
+        
+        width: 33%;
+        height: 100vh;
+        position: fixed;
+        z-index: 111111;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        transition: all 1s;
+        text-align: center;
+
+    }
+    .open-menu nav{
+        transform: translateX(0);
+    }
+    .letter{
+        font-size: 25px;
+    }
+    .content h3{
+        font-size: 90%;
+    }
+    header{
+        background: transparent;
+    }
+    *{
+       max-height: none;
+    }
+    
+}
+
+.last-txt{
+    width: 100;
+    position: relative;
+}
+.l-h1{
+    color: #1db1bf;
+    font-weight: 1;
+    position: absolute;
+    left: 650px;
+    top: 270px;
+}
+#pls{
+    width: 50%;
+    color: #fff;
+    font-family: Tahoma;
+    font-family: 95px;
+    line-height: 25px;
+    position: absolute;
+    left: 650px;
+    top: 325px;
+    padding-bottom: 100px;
+}
+.imagebx{
+    position: absolute;
+    left: 100px;
+    top: 850px;
+    width: 512px;
+    height: 288px;
+    overflow: hidden;
+    
+    
+}
+#image-img{
+    cursor: pointer;
+    width: 512px;
+    height: 288px;
+    background-image: url(img/1_11%20-%20Photo.jpg);
+    transition: all 0.5s;
+    
+}
+#image-img:hover{
+    transform: scale(1.15);
+    
+
+}
+
+@media screen and (max-width:600px){
+    .imagebx{
+        top: 700px;
+        left: 0px;
+        position: absolute;
+        z-index: 10;
+        
+    }
+    #pls{
+        left: 50%;
+        transform: translate(-50% , -50%);
+        width: 80%;
+        top: 880px;
+    }
+    .l-h1{
+        left: 10%;
+        top: 570px;
+        
+    }
+}
+/*#Back-to-Top{
+    position: fixed;
+    display: inline-block;
+    right: 40px;
+    bottom: 40px;
+    background: #131313;
+    width: 40px;
+    height: 40px;
+    cursor:pointer;
+    text-align: center;
+    color: #fff;
+    line-height: 45px;
+    font-size: 20px;
+    display: none;
+}
+*/
+#Back-to-Top {
+    position: fixed;
+    display: inline-block;
+    right: 40px;
+    bottom: 40px;
+    background: #131313;
+    width: 40px;
+    height: 40px;
+    cursor:pointer;
+    text-align: center;
+    color: #fff;
+    line-height: 45px;
+    font-size: 20px;
+    display: none;
+       }
+/* Responsive back to top btn*/
+@media screen and (max-width:600px){
+    #Back-to-Top {
+        left:20px;
+        bottom: 20px;
+    }
+    #pls{
+        margin-top: 80px;
+    }
+    
+}
+
+

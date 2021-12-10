@@ -1,0 +1,445 @@
+*{margin-right: 0;padding: 0;}
+body{background: #1e1e1e;background-image: url(./img/contact-bckground.jpg);background-repeat: no-repeat;overflow-x: hidden;}
+/* form{margin-top: 450px;margin-left: 60px;}  */
+
+form span{color: #00e4ff;font-family: Tahoma;margin-right: 100px;}
+.formbox{color: white;font-family: Tahoma;background-color: #1e1e1e;border: 2px solid #b4b4b4;width: 400px;padding: 5px;}
+#messagebox{height: 150px;text-align: left;}
+#sendbtn{background-color: #ffc000;color: #1e1e1e;font-family: Tahoma;font-weight: bolder;width: 413px; height: 30px;cursor: pointer;text-align: center;border: none;margin-top: 15px;}
+#sendbtn:hover{background-color: #acacac;}
+#erorbox{margin-top: 40px;}
+#menu{z-index: 11111111111112;;width: 500px;height: 150px;;margin-right: 1000px;float: right;text-align: center;margin-top: -411px;position:relative;display: inline-block;}
+#menu ul li{float: left;margin-left: 30px;list-style: none;}
+#menu ul li a{color: #acacac;font-family: tahoma;text-decoration: none;font-size: 18px;}
+#menu ul li a:hover{color: white;transition: all 1s;}
+.formboxdiv{z-index: 111;width: 420px;height: 530px;background-color: #1e1e1e;margin-left: 900px;position: relative;top: 50px;box-shadow: 0 0 20px #111111;padding-left: 50px;}
+.spanar{position: absolute;left: 23%;}
+.form100{position: relative;top: 55px;right: 80px;}
+.form100 span{position: relative;font-size: 35px;top: -30px;color: white;}
+#pfirst{position: relative;display: inline-block;}
+#conttxt{width: 1600px;height: 900px;background-image: url(./img/contact-txt.png);background-repeat: no-repeat;position: relative;display: inline-block;left: 0px;transform: scale(0.9);animation-name: txtanim;animation-duration: 3s;left: 0px;}
+@keyframes txtanim{from{opacity: 0;left: -30px;} to{opacity: 1;left: -100pxpx;};}
+@keyframes txtanimm{from{opacity: 0;left: 160px;} to{opacity: 1;left: 190px;};}
+#alc{position: relative;display: inline-block;top: -1340px;left: 190px;color: white;text-decoration: none;font-family: Tahoma;font-size: 25px;animation-name: txtanimm;animation-duration: 3s;}
+#alc:hover{color: #1db1bf;}
+
+/* here i want to Responsice this web for smartphones */
+
+@media screen and (max-width: 600px) {
+    .formboxdiv{
+        transform: scale(0.65);
+        left: -70px;
+    }
+    
+    #conttxt{
+        left: -130px;
+    }
+    #alc{
+        left: 60px;
+    }
+    @keyframes txtanimm{from{opacity: 0;left: 160px;} to{opacity: 1;left: 60px;};}
+    
+    .formboxdiv{
+        margin-left: 0px;
+        top: 300px;
+    }
+    body{
+        overflow-y: inherit;
+        max-height: 1600px;
+        background: #1e1e1e;
+        
+    }
+    
+}
+
+
+/* Part 2 - Responsive Menu  */
+
+
+}
+.page{
+    width: 100%;
+    height: 100vh;
+    background: #1e1e1e; 
+}
+header{
+        height: 70px;
+        background: #1e1e1e;
+    
+}
+header .menu-icon{
+        display: none;
+}
+nav{
+    width: 89%;
+    margin: 0 auto;
+    background: #131313;
+    
+    
+   
+}
+nav .logo img{
+    width: 30px;
+    height: 30px;
+    margin: 22px 5px;
+    float: left;
+}
+nav ul{
+    list-style: none;
+    float: left;
+    margin-top: -10px;
+}
+nav li{
+    display: inline-block;
+    padding: 28px 10px;
+    font-family: tahoma;
+    color: #a8acac;
+    transition: all 0.5s;
+}
+nav li:hover{
+    cursor: pointer;
+    color: #fff;
+}
+.content{
+     
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+}
+.content h1{
+        font-size: 250%;
+        color: white;
+        font-family: lato;
+}
+.content h3{
+        font-size: 100%;
+        color: #1db1bf;
+        font-family: lato;
+    font-weight: 1;
+}
+
+/* in this part i want to Responsive the web */
+
+@media screen and (max-width:600px){
+    /*
+    #p-le{
+        width: 290px;
+    }
+    .shape-txt{
+        margin-top: -30px;
+        margin-left: 170px;
+    }
+    .shape-square{
+        margin-left: 25px;
+    }
+    .left-content .p2-lc{
+        font-size: 20px;
+    }
+    .formboxdiv{
+        top: 450px;
+    }
+    .left-content .p-lc{
+        font-size: 30px;
+    }
+    
+    .left-content{
+        left: 150px;
+        animation-name: none;
+        top: 5px;
+        margin-top: -130px;
+        margin-left: 550px;
+        width: 200px;
+    }
+    */
+
+    .content h3{
+        font-weight: 600;
+        width: 130%;
+        text-align: center;
+        margin-left: -25px;
+    }
+    .logo{
+        display: none;
+    }
+    header .menu-icon{
+        display: block;
+        width: 20px;
+        height: 20px;
+        position: fixed;
+        top: 25px;
+        right: 20px;
+        
+}
+    .bar,
+    .bar::before,
+    .bar::after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        background: #fff;
+        transition: all 0.5s;
+        
+    }
+    .bar::before{
+        top: -6px;
+        
+    }
+        .bar::after{
+        top: 6px;
+    }
+    
+    .Active .bar{
+        background: transparent;
+    }
+    .Active .bar::before{
+        top: 0;
+        transform: rotate(45deg);
+    }
+        .Active .bar::after{
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    
+    nav{
+        width: 33%;
+        height: 100vh;
+        position: fixed;
+        z-index: 111111;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        transition: all 1s;
+        text-align: center;
+
+    }
+    .open-menu nav{
+        transform: translateX(0);
+        width: 29%;
+    }
+    .letter{
+        font-size: 25px;
+    }
+    .content h3{
+        font-size: 90%;
+    }
+    header{
+        background: transparent;
+    }
+    *{
+       max-height: none;
+    }
+    
+}
+
+
+header nav ul a li {
+    cursor: pointer;
+}
+
+
+/*   Left Content Sourced    */
+
+.left-content{
+    width: 150%;
+    height: 700px;
+    top: 70px;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    padding-left: 100px;
+    background: transparent;
+    animation-name: leftcanim;
+    animation-duration: 1.3s;
+}
+@keyframes leftcanim{
+    from{left: 60px;opacity: 0;}
+    to{left: 0px;opacity: 1;}
+}
+@keyframes leftcanim-phone{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.left-content .p-lc{
+    position: absolute;
+    top: 80px;
+    font-family: Tahoma;
+    font-size: 55px;;
+    color: #15827d;
+    font-weight: 1;
+}
+.left-content .p2-lc{
+    position: absolute;
+    top: 190px;
+    font-family: Tahoma;
+    font-size: 28px;;
+    color: #fff;
+    font-weight: 1;
+}
+.plshi{
+    position: absolute;
+    top: 250px;
+    width: 300px;
+    color: #a9a9a9;
+    font-size: 18px;
+    font-family: Tahoma;
+}
+.shape-square{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-image: url(img/instagram.png);
+    left: 100px;
+    top: 472px;
+}
+.shape-square::after{
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-image: url(img/locatoon.png);
+    position: absolute;
+    left: 0px;
+    top: 55px;
+    
+}
+.shape-square::before{
+    content: '';
+    width: 32px;
+    height: 32px;
+    background-image: url(img/whatsapp.png);
+    position: absolute;
+    left: 0px;
+    top: -60px;
+}
+.shape-txt{
+    background: transparent;
+    color: #fff;
+    font-size: 20px;
+    font-family: Tahoma;
+    font-weight: 1;
+    position: absolute;
+    top: 390px;
+    left: 150px;
+    line-height: 37px;
+}
+.shape-txt a{
+    text-decoration: none;
+    color: #fff;
+}
+#a-hov:hover{
+    color: #1db1bf;
+}
+
+#Back-to-Top {
+    position: fixed;
+    display: inline-block;
+    right: 40px;
+    bottom: 40px;
+    background: #131313;
+    width: 40px;
+    height: 40px;
+    cursor:pointer;
+    text-align: center;
+    color: #fff;
+    line-height: 45px;
+    font-size: 20px;
+    display: none;
+       }
+
+.last-c{
+    position: absolute;
+    width: 300px;
+    height: 50%;
+    left: 0;
+    top: 80px;
+    background: transparent;
+    display: none;
+    
+}
+
+/* Responsive back to top btn*/
+@media screen and (max-width:600px){
+    #Back-to-Top {
+        left:20px;
+        bottom: 20px;
+    }
+    
+}
+
+@media screen and (max-width:600px){
+    *{
+        max-width: 350px;
+        
+    }
+    body{
+        
+    }
+    .left-content{
+        display: none;
+    }
+    nav{
+        height: 100%;
+        position: fixed;
+        width: 24.2%;
+    }
+    .formboxdiv{
+        margin-left: 10px;
+    }
+    .last-c{
+        display: inline-block;
+    }
+    .shape-square{
+        background-color: transparent;
+        z-index: 0;
+        top: 250px;
+        left: 80px;
+    }
+    .last-c p{
+        color: #fff;
+        width: 250px;
+        font-family: Tahoma;
+        position: relative;
+        left: 53px;
+    }
+    .shape-txt2{
+        text-align: left;
+        position: absolute;
+        background: transparent;
+        top: 175px;
+        line-height: 40px;
+        font-size: 14px;
+        width: 240px;
+        left: 37px;
+        color: #a8a8a8;
+        font-family: Tahoma;
+        
+    }
+    .shape-txt2 a{
+        text-decoration: none;
+        color: #a8a8a8;
+    }
+    .last-c h1{
+        color: #15827e;
+        font-family: Tahoma;
+        font-weight: 1;
+        font-size: 40px;
+        position: absolute;
+        left: 50px;
+    }
+    .formboxdiv{
+        margin-left: 40px;
+            padding-top: 65px;
+       
+    }
+
+    .form100 span {
+        top: -90px;
+    }
+}
+
+
+

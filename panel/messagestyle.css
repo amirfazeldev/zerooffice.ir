@@ -1,0 +1,14 @@
+*{margin: 0;padding: 0;}
+body{font-family: Tahoma;background-color: #dcdcdc; overflow-x: hidden;height: auto;}
+.pmtable{width: 800px;margin-top: 80px;float: left;margin-left: 550px;background-color: white;border-radius: 10px;padding:10px;box-shadow: 1px 5px 20px 10px #bababa;}
+#sidebar{width: 472px;height: 789px;background-image: url(./img/sidebar.png);position: relative;display: inline-block;float: left;position: fixed;}
+#sidebar ul{list-style: none;color: white;font-family: Tahoma;margin-top: 200px;margin-left: 78px;}
+#sidebar ul li{margin-top: 46px;cursor: pointer;}
+#sidebar ul li:hover{color: #12b8ce;}
+.linka{text-decoration: none;color: white;}
+#nam{color: green;}
+#mes{color: red;}
+#mes2{color: blue;}
+table tr td:nth-child(2) {color: green;}
+table tr td:nth-child(4) {color: red;}
+table tr td:nth-child(5) {color: blue;}

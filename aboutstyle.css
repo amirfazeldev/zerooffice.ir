@@ -1,0 +1,762 @@
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+    font-family: Tahoma;
+}
+header nav ul{
+    position: absolute;
+    z-index: 1000;
+}
+body{
+    background-color: #1e1e1e;
+    overflow-x: hidden;
+}
+#header{
+    width: 100%;
+    height: 785px;
+    background-color: #1e1e1e;
+    display: inline-block;
+    position: relative;
+}
+#menubar{
+    width: 100%;
+    height: 100px;
+    display: inline-block;
+    z-index: 20000;
+}
+#menu{
+    width: 500px;
+    height: 150px;
+    margin-right: 1000px;
+    float: right;
+    text-align: center;
+    margin-top: 55px;
+    z-index: 1000000000000000;
+}
+#menu ul li{
+    float: left;
+    margin-left: 30px;
+    list-style: none;
+    z-index: 1000000000;
+}
+#menu ul li a{
+    color: #acacac;
+    font-family: tahoma;
+    text-decoration: none;
+    font-size: 18px;
+}
+#menu ul li a:hover{
+    color: white;
+    transition: all 1s;
+}
+#cadre1{
+    width: 770px;
+    height: 730px;
+    background-color: #323232;
+    border-bottom-left-radius: 80px;
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    z-index: 0;
+}
+#hheader{
+    font-family: Tahoma;
+    color: #15827e;
+    font-size: 100px;
+    font-weight: 1;
+    margin-left: -50px;
+    margin-top: 130px;
+    letter-spacing: 5px;
+    position: relative;
+    display: inline-block;
+    animation-duration: 2s;
+    animation-name: toptob;
+}
+@keyframes toptob{
+    from{margin-top: 30px;opacity: 0;}
+    to{margin-top: 130px;opacity: 1;}
+}
+#pheader{
+    font-family: Tahoma;
+    color: white;
+    font-size: 23px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    position: absolute;
+    left: 80px;
+    top: 470px;
+    z-index: 5;
+    animation-name: animcadre;
+    animation-duration: 4s;
+}
+#yellowsquare{
+    width: 800px;
+    height: 800px;
+    background-color: #323232;
+    position: absolute;
+    z-index: 0;
+    right: -400px;
+    top: 800px;
+    transform: rotate(45deg);
+}
+#aboutlogo{
+    width: 500px;
+    height: 67px;
+    background-image: url(./img/about-lsh.png);
+    position: absolute;
+    z-index: 10;
+    transform: scale(0.7);
+    position: absolute;
+    top: 800px;left: 80px;
+}
+.card{
+    width: 350px;
+    height: 550px;
+    background-color: #171717;
+    position: absolute;
+    z-index: 15;top: 980px;
+    left: 150px;
+    font-family: Tahoma;
+    font-size: 30px;
+    color: #ffc000;
+    padding-left: 30px;
+}
+.card:hover{
+    cursor: pointer;
+}
+#c1 span{
+    color: white;
+    position: absolute;
+    bottom: 40px;
+}
+#c1 span span{
+    color:#ffc000;
+}
+#c2{
+    left: 580px;
+    color: white
+}
+#c2 span{
+    color: white;
+    position: absolute;
+    bottom: 40px;
+}
+#c2 span span{
+    color:#ffc000;
+}
+#c3{
+    left: 1000px;
+    color: white
+}
+#c3 span{
+    color: white;
+    position: absolute;
+    bottom: 40px;
+}
+#c3 span span{
+    color:#ffc000;
+}
+@keyframes animcadre{
+    0%{opacity: 0;}
+    30%{opacity: 0} 
+    100%{opacity: 1}
+}
+@keyframes animcadre2{
+    0%{opacity: 0;}
+    100%{opacity: 1}
+}
+#pic1{
+    height: 704px;
+    width: 429px;
+    background-image: url(./img/morteza-ch.png);
+    transform: scale(0.8);
+    position: absolute;
+    bottom: 30px;
+    left: -30px;}
+#pic2{
+    height: 704px;
+    width: 429px;
+    background-image: url(./img/hossein-ch.png);
+    transform: scale(0.8);
+    position: absolute;
+    bottom: 30px;
+    left: -30px;
+}
+#pic3{
+    height: 704px;
+    width: 429px;
+    background-image: url(./img/fat-ch.png);
+    transform: scale(0.8);
+    position: absolute;
+    bottom: 30px;
+    left: -30px;
+}
+#map-canvas{
+    width: 100%;
+    height: 500px;
+}
+#chover{
+    opacity: 0;width: 380px;
+    height: 150px;
+    background-color: #171717;
+    position: absolute;
+    bottom: -745px;
+    left: 150px;
+    z-index: 25;
+    color: #1db1bf;
+    font-family: Tahoma;
+    font-size: 20px;
+}
+#chover span{
+    position: absolute;
+    left: 25px;
+    top: 10px;
+}
+#chover2 span{
+    position: absolute;
+    left: 25px;
+    top: 10px;
+}
+#chover2{
+    opacity: 0;
+    width: 380px;
+    height: 150px;
+    background-color: #171717;
+    position: absolute;
+    bottom: -745px;
+    left: 580px;
+    z-index: 25;
+    color: #1db1bf;
+    font-family: Tahoma;
+    font-size: 20px;
+}
+#chover3{
+    opacity: 0;
+    width: 380px;
+    height: 150px;
+    background-color: #171717;
+    position: absolute;
+    bottom: -745px;
+    left: 1000px;
+    z-index: 25;
+    color: #1db1bf;
+    font-family: Tahoma;
+    font-size: 20px;
+}
+#chover3 span{
+    position: absolute;
+    left: 25px;
+    top: 10px;
+}
+#insta{
+    width: 35px;
+    height: 35px;
+    background-image: url(./img/instagramicon.png);
+    position: absolute;top: 45px;
+    left: 25px;
+}
+#instaadress{
+    cursor: pointer;
+    color: white;
+    margin-left: 15px;
+    margin-top: -6px;
+}
+#instaadress:hover{
+    color:#ffc000;
+}
+#instaadress2{
+    cursor: pointer;
+    color: white;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+#instaadress2:hover{
+    color:#ffc000;
+}
+#instaadress3{
+    cursor: pointer;
+    color: white;
+    margin-left: 40px;
+    margin-top: 40px;}
+#instaadress3:hover{
+    color:#ffc000;
+}
+#c1:hover #chover{
+    opacity: 1;
+}
+#c2:hover #chover2{
+    opacity: 1;
+}
+#c3:hover #chover3{
+    opacity: 1;
+}
+
+
+.team-part {
+	margin-top: 500px;
+	text-align: center;
+	margin-left: -80px;
+}
+
+.team {
+	width: 350px;
+	height: 550px;
+	background-color: #171717;
+	display: inline-block;
+	position: relative;
+	text-align: left;
+	margin-left: 30px;
+	margin-bottom: 75px;
+	cursor: pointer;
+}
+
+.team img {
+	height: 704px;
+	width: 429px;
+	transform: scale(0.8);
+	position: absolute;
+	top: -150px;
+	right: -35px;
+}
+
+.team span {
+	font-family: tahoma;
+	color: #fff;
+	position: absolute;
+	font-size: 25px;
+	margin-top: 470px;
+	margin-left: 30px;
+	text-align: left;
+}
+
+.team-hidden {
+	opacity: 0;
+	width: 330px;
+	height: 200px;
+	background-color: #171717;
+	margin-top: 350px;
+	z-index: 11111111;
+	position: relative;
+	color: #ffc000;
+	font-family: Tahoma;
+	font-size: 20px;
+	padding-left: 20px;
+	transition: all 0.5s;
+
+}
+
+.team:hover .team-hidden {
+	transition: all 0.5s;
+	opacity: 1;
+}
+
+.team:hover span {
+	display: none;
+}
+
+.instalogo
+{
+	width: 265px;
+	height: 40px;
+}
+#insta1
+{
+	background-image: url(./img/instalogo1.png);
+}
+#insta2
+{
+	background-image: url(./img/instalogo2.png);
+}
+#insta3
+{
+	background-image: url(./img/instalogo.png);
+}
+
+
+
+/* Responsive layout  */
+
+@media screen and (max-width: 600px) {
+    #yellowsquare{
+        display: none;
+    }
+    #hheader{
+        top: -100px;
+    }
+    .main-content{
+        top: 1800px;
+        left: -125px;
+    }
+	.team-part 
+	{
+	margin-top: 500px;
+	text-align: center;
+	margin-left: 20px;
+    z-index: 505;
+	}
+	#aboutlogo
+	{
+		left: -20px;
+		top: 550px;
+	}
+	#hheader
+	{
+        margin-top: 100px;
+		margin-left: 45px;
+		font-size: 60px;
+        z-index: 200;
+        font-weight: 600;
+	}
+	#pheader
+	{
+        width: 420px;
+		left: 50px;
+		top: 260px;
+	}
+    
+}
+
+
+@media screen and (max-width: 1100px) {
+
+    
+
+    #hheader{
+        animation-name: animcadre2;
+        z-index: 500;
+        left: -30px;
+        font-size: 42px;
+        top: -85px;
+    }
+    #pheader{
+        z-index: 500;
+        left: 15px;
+        top: 225px;
+        width: 340px;
+    }
+    .team-hidden{
+        z-index: 700;
+    }
+}
+
+
+
+
+
+
+.container{
+    margin-right: -11px;
+    float: right;
+    transform: scale(0.9);
+    text-align: center;
+    
+}
+.container .card{
+    position: relative;
+    width: 400px;
+    height: 650px;
+    background: #171717;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+.container .card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffc000;
+    clip-path: circle(270px at 80% 20%);
+    transition: 0.7s ease-in-out;
+}
+.container .card:hover:before{
+    clip-path: circle(450px at 80% -25%);
+}
+.container .card::after{
+    content: 'Zero';
+    position: absolute;
+    top: 35%;
+    left: -10%;
+    font-size: 16em;
+    color: #242424;
+}
+.container .card .imgbox{
+    position: absolute;
+    transform: translateY(-5%);
+    z-index: 100000;
+    width: 100%;
+    height: 220px;
+    transition: 0.7s;
+}.container .card .imgbox:hover{
+    transform: translateY(-30%);
+}
+.container .card .contentBX{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    transition: 1s;
+    z-index: 1000000000;
+     text-align: center;
+}
+.container .card:hover .contentBX{
+    height: 130px;
+}
+.container .card .imgbox img{
+    transform: scale(0.85);
+}
+.container .card .contentBX h2{
+    color: #fff;
+    letter-spacing: 1px;
+    position: relative;
+    font-size: 25px;
+    text-align: center;
+}
+.container .card .contentBX h3{
+    color: #ffc000;
+    font-weight: 100;
+    font-size: 25px;
+}
+.container .card .contentBX a{
+    color: #373737;
+    text-decoration: none;
+    font-size: 18px;
+}
+.container .card .contentBX a:hover{
+    color: white;
+    transition: all 0.5s;
+    
+}
+.main-content{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    align-items: center;
+}
+.centermaker{
+  position: absolute;
+    left: -110px;
+    bottom: 80px;
+}
+
+
+
+
+#loadingmain{
+    width: 86px;
+    height: 60px;
+    margin: 0 auto 0 auto;
+}
+.page{
+    width: 100%;
+    height: 100vh;
+    background: #1e1e1e; 
+}
+header{
+        height: 70px;
+        background: #1e1e1e;
+    
+}
+header .menu-icon{
+        display: none;
+}
+nav{
+    width: 89%;
+    margin: 0 auto;
+    background: #181818;
+   
+}
+nav .logo img{
+    width: 30px;
+    height: 30px;
+    margin: 22px 5px;
+    float: left;
+}
+nav ul{
+    list-style: none;
+    float: left;
+}
+nav li{
+    display: inline-block;
+    padding: 28px 10px;
+    font-family: tahoma;
+    color: #a8acac;
+    transition: all 0.5s;
+}
+nav li:hover{
+    cursor: pointer;
+    color: #fff;
+}
+.content{
+     
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+}
+.content h1{
+        font-size: 250%;
+        color: white;
+        font-family: lato;
+}
+.content h3{
+        font-size: 100%;
+        color: #1db1bf;
+        font-family: lato;
+    font-weight: 1;
+}
+    .container .card .contentBX{
+        left: 5px;
+        
+    }
+
+/* in this part i want to Responsive the web */
+
+@media screen and (max-width:600px){
+    #aboutlogo{
+        transform: scale(0.5);
+        left: -110px;
+        top: 650px;
+    }
+    .container{
+        transform: scale(1);
+        margin-right: 200px;
+    }
+    .container .card{
+        width: 280px;
+        height: 580px;
+        left: 135px;
+        margin-bottom: 50px;
+    }
+    .container .card .imgbox{
+        left: -50px;
+        transform: scale(0.9);
+    }
+    .container .card .contentBX{
+        left: 0px;
+        
+    }
+
+    #cadre1{
+        top: -180px;
+        left: 200px;
+    }
+    .logo{
+        display: none;
+    }
+    header .menu-icon{
+        display: block;
+        width: 20px;
+        height: 20px;
+        position: fixed;
+        top: 25px;
+        right: 20px;
+        z-index: 10000000000;
+        
+}
+    .bar,
+    .bar::before,
+    .bar::after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        background: #fff;
+        transition: all 0.5s;
+        
+    }
+    .bar::before{
+        top: -6px;
+        
+    }
+        .bar::after{
+        top: 6px;
+    }
+    
+    .Active .bar{
+        background: transparent;
+    }
+    .Active .bar::before{
+        top: 0;
+        transform: rotate(45deg);
+    }
+        .Active .bar::after{
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    
+    nav{
+        width: 33%;
+        height: 100vh;
+        position: fixed;
+        z-index: 111111;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        transition: all 1s;
+        text-align: center;
+
+    }
+    .open-menu nav{
+        transform: translateX(0);
+    }
+    .letter{
+        font-size: 25px;
+    }
+    .content h3{
+        font-size: 90%;
+    }
+    header{
+        background: transparent;
+    }
+    *{
+       max-height: none;
+    }
+    hheader{
+        
+    }
+    
+}
+
+#Back-to-Top {
+    position: fixed;
+    display: inline-block;
+    right: 40px;
+    bottom: 40px;
+    background: #131313;
+    width: 40px;
+    height: 40px;
+    cursor:pointer;
+    text-align: center;
+    color: #fff;
+    line-height: 45px;
+    font-size: 20px;
+    display: none;
+    z-index: 100000000000000000;
+       }
+/* Responsive back to top btn*/
+@media screen and (max-width:600px){
+    #Back-to-Top {
+        left:20px;
+        bottom: 20px;
+    }
+    .main-content{
+        left: -40px;
+    }
+    .centermaker{
+  position: absolute;
+    left: -150px;
+    bottom: 80px;
+}
+    
+}
+
+

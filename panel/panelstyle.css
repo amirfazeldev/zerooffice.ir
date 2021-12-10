@@ -1,0 +1,25 @@
+*{margin: 0;padding: 0;border: 0;}
+body{background-color: #dcdcdc;overflow-y: hidden;}
+#sidebar{width: 472px;height: 890px;background-image: url(./img/sidebar.png);position: relative;display: inline-block;}
+#sidebar ul{list-style: none;color: white;font-family: Tahoma;margin-top: 200px;margin-left: 78px;}
+#sidebar ul li{margin-top: 46px;cursor: pointer;}
+#sidebar ul li:hover{color: #12b8ce;}
+.chart{width: 600px;height: 140px;background-color: white;margin-top: 30px;position: relative;display: inline-block;cursor: pointer;}
+.chart:hover{background-color: #cdcdcd;color: white;}
+#chartbox a{text-decoration: none;color: black;}
+#chartbox{width: 500px;height: 150px;margin-left: 650px;margin-top: -850px;}
+.square{width: 100px;height: 100px;border-radius: 15px;margin-left: 50px;margin-top: 18px;}
+#s1{background-color: #fea01c;background-image: url(./img/ch1.png); }
+#s2{background-color: #55ae5a;background-image: url(./img/ch2.png); }
+#s3{background-color: #ea4541;background-image: url(./img/ch3.png); }
+#s4{background-color: #12b8ce;background-image: url(./img/ch4.png); }
+.psq{float: right;font-family: Tahoma;font-size: 38px;margin-right: 220px;margin-top: -90px;}
+#psq1{margin-right: 280px;}
+#psq2{margin-right: 200px;}
+#psq3{margin-right: 270px;}
+.p2s{color: #9a9a9a;font-family: Tahoma;float: right;margin-top: -40px;}
+#p2s1{margin-right: 130px;}
+#p2s2{margin-right: 170px;}
+#p2s3{margin-right: 170px;}
+#p2s4{margin-right: 145px;}
+.linka{text-decoration: none;color: white;}

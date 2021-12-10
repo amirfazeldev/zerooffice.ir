@@ -1,0 +1,10 @@
+*{margin: 0;border: 0;padding: 0;}
+body{background-color: #1e1e1e;}
+form {color: #1db1bf;font-family: Tahoma;margin-top: 50px;}
+form::focus{outline: none;}
+.txt-area{width: 300px;height: 30px;background-color: #1e1e1e;color: white;font-family: Tahoma;font-size: 15px;border-bottom: 2px solid white;}
+.txt-area::focus{outline: none;}
+#send-btn{width: 70px;height: 30px;border-radius: 8px;background-color: #1db1bf;color: #1e1e1e;cursor: pointer;font-family: Tahoma;font-weight: 1;font-size: 14px;}
+#send-btn:hover{background-color: #ffc001;}
+#erordivui{width: 100px;height: 40px;padding-bottom: 150px;}
+#zeroname{color: #15827e;font-family: Tahoma;font-weight: 1px;font-size: 45px;}

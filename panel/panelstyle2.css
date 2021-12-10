@@ -1,0 +1,9 @@
+*{margin: 0;padding: 0;}
+body{background-color: #dcdcdc;font-family: tahoma;}
+#sidebar{width: 472px;height: 890px;background-image: url(./img/sidebar.png);position: relative;display: inline-block;position: fixed;}
+#sidebar ul{list-style: none;color: white;font-family: Tahoma;margin-top: 200px;margin-left: 78px;}
+#sidebar ul li{margin-top: 46px;cursor: pointer;}
+#sidebar ul li:hover{color: #12b8ce;}
+.linka{text-decoration: none;color:white;}
+.managetb{position: relative;display: inline-block;top: -750;left: 580px;background-color: white;}
+a{color: #ea4541;}

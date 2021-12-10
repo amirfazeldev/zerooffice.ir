@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+	   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home | zerooffice</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="./img/favicon.png">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+        <meta 
+     name='viewport' 
+     content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' 
+/>
+        
+        
+          <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+  <meta name="author" content="Vincent Garreau" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="particles.js-master/demo/css/style.css">
+        
+         
+    </head>
+    <body>
+        
+        <section class="page">
+            <header>
+                <div class="menu-icon">
+                    <span class="bar"></span>
+                </div>
+                
+                <nav>
+                    <div class="logo">
+                        <img src="img/favicon.png" alt="logo">
+                    </div>
+                    <ul>
+                        <a href="index.html"><li style="color: #ffc000;padding-bottom: 5px;">Home</li></a>
+                        <a href="Blog.php"> <li>Blog</li></a>
+                        <a href="Contact.php"><li>Contact Us</li></a>
+                        <a href="AboutUs.html"><li>About Us</li> </a>
+                    </ul>
+                </nav>
+            </header>
+            
+            <div class="content">
+                		<span class="letter" id="l1">Z</span>
+		<span class="letter" id="l2">E</span>
+		<span class="letter" id="l3">R</span>
+		<span class="letter" id="l4">O</span>
+		<span class="letter" id="l5">O</span>
+		<span class="letter" id="l6">F</span>
+		<span class="letter" id="l7">F</span>
+		<span class="letter" id="l8">I</span>
+		<span class="letter" id="l9">S</span>
+		<span class="letter" id="l10">E</span>
+                
+                <h3>Here The distance between imagination & reality is zero</h3>
+            </div>
+            
+            
+        </section>
+        
+        
+        
+        
+        
+        
+        
+         <div id="particles-js"></div>
+ 
+        
+        <script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+      
+          <idiv class="imagebx">
+              <div id="image-img"></div>
+          </idiv>
+
+    <div class="last-txt">
+       <h1 class="l-h1">Architecture...</h1>
+        <p align="justify" id="pls">
+        A general term to describe buildings and other physical structures.[6]
+The art and science of designing buildings and (some) nonbuilding structures.[6]
+The style of design and method of construction of buildings and other physical structures.[6]
+A unifying or coherent form or structure.[7]
+Knowledge of art, science, technology, and humanity.[6]
+The design activity of the architect,[6] from the macro-level (urban design, landscape architecture) to the micro-level (construction details and furniture). The practice of the architect, where architecture means offering or rendering professional services in connection with the design and construction of buildings, or built environments.[8]construction of buildings, or built environments.[8]construction of buildings, or built environments.[8]
+        </p>
+        </div>
+        <!-- <div id="Back-to-Top"><i class="fas fa-sort-up"></i></div> -->
+        <a href="#" id="Back-to-Top"><i class="fas fa-sort-up"></i></a>
+        
+        
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script type="text/javascript" src="myScript.js"></script>
+        <script src="particles.js-master/particles.js"></script>
+        <script src="particles.js-master/demo/js/app.js"></script>
+        <script src="backtotop.js"></script>
+        
+    </body>
+</html>

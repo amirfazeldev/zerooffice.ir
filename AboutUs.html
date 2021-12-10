@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="myScript.js"></script>
+	<title>AboutUS | zerooffice</title>
+	<link rel="stylesheet" type="text/css" href="aboutstyle.css">
+	<link rel="shortcut icon"  href="./img/favicon.png">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+ <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script type="text/javascript">
+       function initialize() {
+         var myLatlng = new google.maps.LatLng(36.711070, 51.190748);
+         var mapOptions = {
+           zoom: 15,
+           center: myLatlng,
+           mapTypeId: google.maps.MapTypeId.ROADMAP
+         }
+          
+         var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+          
+         var contentString = '<div style="direction: rtl; text-align: right;font-family: Tahoma;">' +
+                                     '<h4>Motelghou , Zero Office</h4>' +
+                                      '<h5>zerooffice</h5>' +
+                                      '</div>';
+          
+         var infowindow = new google.maps.InfoWindow({
+           content: contentString
+         });
+          
+         var marker = new google.maps.Marker({
+           position: myLatlng,
+           map: map,
+           title: 'Takhte Jamshid'
+         });
+          
+         infowindow.open(map, marker);
+         google.maps.event.addListener(marker, 'click', function() {
+           infowindow.open(map, marker);
+         });
+       }
+    </script>
+
+
+</head>
+<body>
+    <div class="menu-icon">
+        <span class="bar"></span>
+    </div>
+    <div class="menuhidden"></div>
+	<div id="header">
+<!--		 <div id="menubar">
+			<div id="menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="Blog.php">Blog</a></li>
+					<li><a href="Contact.php">Contact Us</a></li>
+					<li><a href="AboutUs.html" style="color: #ffc000;border-bottom: 2px solid #ffc000;padding-bottom: 5px;">About Us</a></li>
+				</ul>
+			</div>
+-->
+        
+        
+        <header>
+                <div class="menu-icon">
+                    <span class="bar"></span>
+                </div>
+                
+                <nav>
+                    <div class="logo">
+                        <img src="img/favicon.png" alt="logo">
+                    </div>
+                    <ul>
+                        <a href="index.html"><li>Home</li></a>
+                        <a href="Blog.php"> <li>Blog</li></a>
+                        <a href="Contact.php"><li>Contact Us</li></a>
+                        <a><li style="color: #ffc000;padding-bottom: 5px;">About Us</li> </a>
+                    </ul>
+                </nav>
+            </header>
+        
+        
+        
+			 <div id="cadre1"></div>  
+			<h1 id="hheader">Architecture
+				<br>& Design
+			</h1>
+			<p id="pheader">
+				Zero Office's activity is in the direction of design and architecture
+				<br>
+				Our company has been operating since 2020
+				<br>
+				Zero Office is a collection of experienced and creative people
+				<br>
+				This is what sets it apart from other companies
+			</p>
+
+			<div id="yellowsquare"></div> 
+			<div id="aboutlogo"></div>
+
+           
+          <!--      
+		<div class="team-part">
+			<div class="team">
+				<img src="./img/morteza-ch.png">
+				<span>Morteza  Alimohammadi</span>
+
+				<div class="team-hidden">
+					<br>
+					Principal Engineer
+					<br>
+					<div class="instalogo" id="insta1"></div>
+
+					
+				</div>
+			</div>
+
+			<div class="team">
+				<img src="./img/hossein-ch.png">
+				<span>Hossein  Aghaei</span>
+
+				<div class="team-hidden">
+					<br>
+					Designer Engineer
+					<br>
+					<div class="instalogo" id="insta2"></div>
+					
+				</div>
+			</div>
+
+			<div class="team">
+				<img src="./img/fat-ch.png">
+				<span>Fatemeh  Aghaei</span>
+
+				<div class="team-hidden">
+					<br>
+					Civil Engineer
+					<br>
+					<div class="instalogo" id="insta3"></div>
+					<!-- inja tozihati ke mikhay neshoon bedi ro benevis 
+				</div> -->
+            
+                    <div class="main-content">
+        <div class="centermaker">
+            <div class="container" id="cont2">
+                <div class="card">
+                    <div class="imgbox">
+                        <img src="img/morteza-ch.png">
+                    </div>
+                    <div class="contentBX">
+                        <h2>Morteza Alimohamadi</h2>
+                        <h3>Principal Designer</h3>
+                        <a href="https://www.instagram.com/morteza.a.m_71/">instagram page</a>
+                    </div>
+                
+                </div>
+            </div>
+            
+                    <div class="container" id="cont2">
+                <div class="card">
+                    <div class="imgbox">
+                        <img src="img/hossein-cha.png">
+                    </div>
+                    <div class="contentBX">
+                        <h2>Hossein Aghaei</h2>
+                        <h3>Principal Engineer</h3>
+                        <a href="https://www.instagram.com/hoseinaghaei1373/">instagram page</a>
+                    </div>
+                
+                </div>
+            </div>
+            
+            
+         <div class="container" id="cont2">
+                <div class="card">
+                    <div class="imgbox">
+                        <img src="img//fat-ch.png">
+                    </div>
+                    <div class="contentBX">
+                        <h2>Fatemeh Aghaei</h2>
+                        <h3>Civil Engineer</h3>
+                        <a href="https://www.instagram.com/fatemeaghaei1375/">instagram page</a>
+                    </div>
+                
+                </div>
+            </div>
+            
+            
+        <!-- <div class="container" id="cont3">
+                <div class="card">
+                    <div class="imgbox">
+                        <img src="img/morteza-ch.png">
+                    </div>
+                    <div class="contentBX">
+                        <h2>Morteza Alimohammadi</h2>
+                        <h3>Principal Architect</h3>
+                        <a href="#">instagram page</a>
+                    </div>
+                
+                </div>
+            </div>
+            
+            -->
+            
+        </div>
+   </div>
+            
+            
+            
+            
+            
+			</div>
+		
+
+    
+    <a href="#" id="Back-to-Top"><i class="fas fa-sort-up"></i></a>
+
+
+       <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>  
+       <script type="text/javascript" src="myScript2.js"></script>
+       <script src="backtotop.js"></script>
+       
+       
+
+</body>
+</html>
